@@ -1,0 +1,2 @@
+C:\Users\sinem\source\repos\Plazalar\mvckatman\obj\Debug\mvckatman.csproj.AssemblyReference.cache
+C:\Users\sinem\source\repos\Plazalar\mvckatman\obj\Debug\mvckatman.csproj.CoreCompileInputs.cache

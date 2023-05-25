@@ -1,0 +1,33 @@
+﻿@model IEnumerable<mvcapikatman.Models.mvchizmetmodel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "EY")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.HizmetTanimi)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.HizmetTanimi)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "EY", new { id=item.HizmetNo }) |
+             |
+            @Html.ActionLink("Delete", "Delete", new { id=item.HizmetNo})
+        </td>
+    </tr>
+}
+
+</table>

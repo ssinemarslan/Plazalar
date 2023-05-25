@@ -1,0 +1,33 @@
+﻿@model IEnumerable<mvcapikatman.Models.mvcgorevmodel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "EY")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.GorevTanimi)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.GorevTanimi)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "EY", new { id=item.GorevNo }) |
+            |
+            @Html.ActionLink("Delete", "Delete", new { id=item.GorevNo })
+        </td>
+    </tr>
+}
+
+</table>

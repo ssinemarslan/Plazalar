@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PlazalarAppModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="BloklarBilgi">
+    <Key>
+      <PropertyRef Name="BlokNo" />
+    </Key>
+    <Property Name="BlokNo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BlokAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Adres" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Telefon" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GorevlerBilgi">
+    <Key>
+      <PropertyRef Name="GorevNo" />
+    </Key>
+    <Property Name="GorevNo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GörevTanimi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="HizmetlerBilgi">
+    <Key>
+      <PropertyRef Name="HizmetNo" />
+    </Key>
+    <Property Name="HizmetNo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HizmetTanimi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PersonellerBilgi">
+    <Key>
+      <PropertyRef Name="PersonelNo" />
+    </Key>
+    <Property Name="PersonelNo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PersonelAdSoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Adres" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Telefon" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PlazalarBilgi">
+    <Key>
+      <PropertyRef Name="PlazaNo" />
+    </Key>
+    <Property Name="PlazaNo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PlazaAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Adres" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Telefon" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="PlazalarAppEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BloklarBilgis" EntityType="Self.BloklarBilgi" />
+    <EntitySet Name="GorevlerBilgis" EntityType="Self.GorevlerBilgi" />
+    <EntitySet Name="HizmetlerBilgis" EntityType="Self.HizmetlerBilgi" />
+    <EntitySet Name="PersonellerBilgis" EntityType="Self.PersonellerBilgi" />
+    <EntitySet Name="PlazalarBilgis" EntityType="Self.PlazalarBilgi" />
+  </EntityContainer>
+</Schema>

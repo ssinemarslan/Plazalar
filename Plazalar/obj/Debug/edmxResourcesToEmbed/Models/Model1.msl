@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PlazalarAppModelStoreContainer" CdmEntityContainer="PlazalarAppEntities1">
+    <EntitySetMapping Name="BloklarBilgis">
+      <EntityTypeMapping TypeName="PlazalarAppModel.BloklarBilgi">
+        <MappingFragment StoreEntitySet="BloklarBilgi">
+          <ScalarProperty Name="BlokNo" ColumnName="BlokNo" />
+          <ScalarProperty Name="BlokAdi" ColumnName="BlokAdi" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GorevlerBilgis">
+      <EntityTypeMapping TypeName="PlazalarAppModel.GorevlerBilgi">
+        <MappingFragment StoreEntitySet="GorevlerBilgi">
+          <ScalarProperty Name="GorevNo" ColumnName="GorevNo" />
+          <ScalarProperty Name="GörevTanimi" ColumnName="GörevTanimi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HizmetlerBilgis">
+      <EntityTypeMapping TypeName="PlazalarAppModel.HizmetlerBilgi">
+        <MappingFragment StoreEntitySet="HizmetlerBilgi">
+          <ScalarProperty Name="HizmetNo" ColumnName="HizmetNo" />
+          <ScalarProperty Name="HizmetTanimi" ColumnName="HizmetTanimi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PersonellerBilgis">
+      <EntityTypeMapping TypeName="PlazalarAppModel.PersonellerBilgi">
+        <MappingFragment StoreEntitySet="PersonellerBilgi">
+          <ScalarProperty Name="PersonelNo" ColumnName="PersonelNo" />
+          <ScalarProperty Name="PersonelAdSoyad" ColumnName="PersonelAdSoyad" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PlazalarBilgis">
+      <EntityTypeMapping TypeName="PlazalarAppModel.PlazalarBilgi">
+        <MappingFragment StoreEntitySet="PlazalarBilgi">
+          <ScalarProperty Name="PlazaNo" ColumnName="PlazaNo" />
+          <ScalarProperty Name="PlazaAdi" ColumnName="PlazaAdi" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

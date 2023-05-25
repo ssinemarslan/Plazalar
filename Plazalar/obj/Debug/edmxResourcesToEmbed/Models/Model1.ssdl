@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PlazalarAppModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="BloklarBilgi">
+    <Key>
+      <PropertyRef Name="BlokNo" />
+    </Key>
+    <Property Name="BlokNo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BlokAdi" Type="varchar" MaxLength="50" />
+    <Property Name="Adres" Type="varchar" MaxLength="50" />
+    <Property Name="Telefon" Type="varchar" MaxLength="11" />
+  </EntityType>
+  <EntityType Name="GorevlerBilgi">
+    <Key>
+      <PropertyRef Name="GorevNo" />
+    </Key>
+    <Property Name="GorevNo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GörevTanimi" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="HizmetlerBilgi">
+    <Key>
+      <PropertyRef Name="HizmetNo" />
+    </Key>
+    <Property Name="HizmetNo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HizmetTanimi" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="PersonellerBilgi">
+    <Key>
+      <PropertyRef Name="PersonelNo" />
+    </Key>
+    <Property Name="PersonelNo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PersonelAdSoyad" Type="varchar" MaxLength="50" />
+    <Property Name="Adres" Type="varchar" MaxLength="50" />
+    <Property Name="Telefon" Type="varchar" MaxLength="11" />
+  </EntityType>
+  <EntityType Name="PlazalarBilgi">
+    <Key>
+      <PropertyRef Name="PlazaNo" />
+    </Key>
+    <Property Name="PlazaNo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PlazaAdi" Type="varchar" MaxLength="50" />
+    <Property Name="Adres" Type="varchar" MaxLength="50" />
+    <Property Name="Telefon" Type="varchar" MaxLength="11" />
+  </EntityType>
+  <EntityContainer Name="PlazalarAppModelStoreContainer">
+    <EntitySet Name="BloklarBilgi" EntityType="Self.BloklarBilgi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GorevlerBilgi" EntityType="Self.GorevlerBilgi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HizmetlerBilgi" EntityType="Self.HizmetlerBilgi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PersonellerBilgi" EntityType="Self.PersonellerBilgi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PlazalarBilgi" EntityType="Self.PlazalarBilgi" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
